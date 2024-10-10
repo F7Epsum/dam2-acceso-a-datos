@@ -1,0 +1,102 @@
+---------- Ejercicio 1 -----
+
+Crear una clase producto con atributos (nombre, precio y cantidad).Luego se ha de crear una clase principal (main) que gestiona nuestra tienda.
+El programa deberá:
+        - Añadir productos en el inventario
+        - Mostrar todos los productos
+        - Actualizar la cantidad y por aparte su precio de un producto especifico.
+        - Eliminar un producto del inventario (Eliminar productos intermedios. no puede ser el primero ni el ultimo).
+        - Calcular el valor total del inventario (Suma de precio * cantidad de cada producto). Todos los productos.
+Se han de usar ArrayLists.
+
+
+---------- Ejercicio 3 -----
+
+Crear una clase Vehiculo con atribtos velocidadMaxima y marca. Otras dos clases hijas: Coche y Bicicleta. Ambas clases tendràn un metodo acelerar(). que aumentarà la velocidad actual. En la clase coche añade un atributo extra llamado capacidadCombustible y en la clase bicicleta un atributo llamado tipoBicicleta. El programa pedira:
+
+    -Crear instancias de coche y bicicleta
+    -Acelerar tanto el coche como la bicicleta.
+    -Mostrar la informacion completa de c/vehiculo.
+
+---------- Ejercicio 4 -----
+
+Crear una clase abstracta CuentaBancaria con atirbutos como saldo y metodos abstractos como depositar() y retirar(). Luego se crearàn dos clases hijas: cuentaCorriente y cuentaAhorros. La cuentaCorriente tendra un atributo adicional envios y la cuentaAhorros tendrà un atributo interesAnual. El programa debe:
+    -Permitir la creacion de cuentas corrientes y cuentas de ahorros.
+    -Calcular el interes anual de la cuenta de ahorro.
+    -Mostrar la informaciòn completa de cada cuenta.
+
+---------- Ejercicio 5 ---------
+
+Crear una interfaz llamada Conectable con metodos encender() y apagar().
+Luego crear dos clases telefono y ordenador que implementen esta interfaz.
+    -Crear un archivo main instancias de telefono y ordenador
+    -Encender y apagar ambos dispositivos.
+
+    Si añadimos dos interfaces:
+    -Crear otra interfaz llamada recargable con metodos cargar() y nivelDeBateria()
+
+
+---------- Ejercicio 6 (09/10) ---------
+
+Crear una clase abstracta que llamaremos dispositivos con un atributo llamado "estado" (encendido o apagado), y un metodo abstracto encender(). Luego crea una interfaz llamada conectable (que ya tenemos, pero la modificaremos) con los metodos conectarWifi() y desconectarWifi().
+Crea dos clases, TelefonoInteligente y Tablet, que heredan de Dispositivo y a su vez implementan la interfaz Conectable.
+
+El programa debe:
+    -Crear instancias de TelefonoInteligente y Tablet.
+    -Encender ambos dispositivos (con System.out.println() me vale).
+    -Conectarlos y desconectarlos del wifi.
+
+Adicional:
+    -Crear una variable de tipo String llamado marca en dispositivo. El usuario deberá introducir por terminal la marca del movil y acto seguido se creará la instancia del dispositivo creado.
+
+    -Se deberá de leer un archivo .txt llamado mis-dispositivos.txt donde, en cada linea pondremos diferentes marcas de telefono. Estos valores los usaremos para crear instancias de TelefonoInteligente y los almacenaremos en un ArrayList.
+
+
+---------- Ejercicio 7 (09/10) ---------
+
+Crear una clase abstracta que llamaremos Empleado con atributos nombre, salarioBase y un metodo abstracto calcularSalario. Luego crearemos dos interfaces Autenticable con metodos iniciarSesion() y cerrarSesion(). y Bonificable con un metodo calcularBono().
+
+Hay que crear dos clases Gerente y Programador, que extiendan la clase de Empleado e implementen las dos interfaces. El programador debe:
+    -Crear instancias de Gerente y Programador.
+    -Iniciar sesion para ambos empleados y calcular el salario
+    -Mostrar la información completa de cada empleado.
+    -Cerrar sesión para ambos empleados.
+
+public static void main(){
+    Gerente gerente = new Gerente("Laura", 5000, 1000);
+    Programador programador = new Programador("Carlos",3000,500);
+
+    gerente.iniciarSesion("LauraG", "password123");
+    programador.iniciarSesion("carlosP", "password456");
+
+    system.out.println("\n Información del gerente: ");
+    gerente.mostrarInformacion();
+
+    system.out.println("\n Información del programador: ");
+    programador.mostrarInformación();
+
+    gerente.cerrarSesion();
+    programador.cerrarSesion();
+}
+
+
+---------- Ejercicio 8 (10/10) ---------
+
+Importar registros
+Comenzamos a proexar datos en nuestra empresa. El primer reto que nos indica Ana, la jefa de proyecto, es crear un programa que importe una serie de registros almacenados en un fichero de texto en formato csv denominado alumnos.csv. Un extracto del contenido es el siguiente:
+    -Angela Veron,20,DAW,7,1223
+    -Silvia Climent,24 DAM,5.5
+    -Jordi Costa,22,DAW,9
+
+El contenido es informaciòn de alumnos: nombre, edad, ciclo que cursa y nota media actual. Se pide codificar un programa que realice las siguientes acciones:
+    -Crear una clase Alumno, contenedora de la informaciòn que se solicita. Contendrà los metodos habituales: constructores, getters y setters y toString.
+    -Importar: leer la informaciòn del fichero, guardandola en memoria. Para ello crearà una clase que almacenarà la información.
+    -Imprimir todos los alumnos.
+    -Buscar aquel alumno con mayor nota y mostrarlo por pantalla.
+    -Crear un metodo que devuelva una representación de cada alumno en formato CSV.
+    -Crear una funcion que genere un fichero de texto AlumnosAprobados.csv, con la misma estructura que el archivo inicial, pero solo con los alumnos aprobados.
+    -Puedes crear los metodos y funciones auxiliares que consideres.
+
+---------- Ejercicio 9 (10/10) ---------
+
+Crear un programa que reciba el nombre de un fichero. Si el fichero no existe, lo cra. Si existe debemos de leerlo y contar de carater las vocales de la primera linea del archivo. Hay que mostrar en pantalla, el resultado de la ejecución.
