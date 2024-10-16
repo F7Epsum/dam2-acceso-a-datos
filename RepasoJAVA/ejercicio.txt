@@ -102,7 +102,7 @@ El contenido es informaciòn de alumnos: nombre, edad, ciclo que cursa y nota me
 Crear un programa que reciba el nombre de un fichero. Si el fichero no existe, lo cra. Si existe debemos de leerlo y contar de carater las vocales de la primera linea del archivo. Hay que mostrar en pantalla, el resultado de la ejecución.
 
 
----------- Ejercicio 0 (14/10) ---------
+---------- Ejercicio 10 (14/10) ---------
 
 Crear un progrma con los siguientes requisitos. Se ha de crear una Clase llamado FileManager. En el tendrémos que declarar un constructor al que le llegará una ruta de un archivo (String). En esta clase tendremos los metodos Exists (retorna un valor Boolean), importFromFile(void function), getDataFromFile (retorna un ArrayList de tipo Figura).
 Por otra parte, tendremos una clase abstracta llamada Figura (clase Padre. Añadir los metodos y atributos que creais necesarios.
@@ -121,5 +121,17 @@ El archivo TXT tendrá la siguiente estructura:
 
 Si una linea no tiene color, es decir, no tiene "#...", la figura no la deberemos de almacenar en el array. En este caso, imprimiremos por pantalla, Figura no válidad. Debéis de añadir una linea en el fichero TXT que muestre este caso.
 
-Finalmente crearemos un fichero en otro metodo dentro de FileManager que cree un archivo TXT llamado resultados.txt donde se almacenarán todos los metodos toString de cada figura. 
+Finalmente crearemos un fichero en otro metodo dentro de FileManager que cree un archivo TXT llamado resultados.txt donde se almacenarán todos los metodos toString de cada figura.
+
+---------- Ejercicio 12 (16/10) ---------
+
+Crearemos un archivo llamado entrada.txt con el siguiente contenido:
+
+Este es un archivo de ejemplo:
+Aprendiendo a usar FileInputStream y FileOutputStream
+Trabajando con archivos JAVA
+
+Se ha de escribir un programa en java que lea el archivo TXT y luego escriba el mismo contenido en otro archi llamado salida.bin
+Hay que asegurarse de leer el archivo en bloques bytes y escribirlo en el archivo de salida en modo binario.
+
 
