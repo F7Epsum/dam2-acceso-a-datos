@@ -158,8 +158,8 @@ Implementar una interfaz llamada Gestionable que define los metodos:
     -String getNombre();
     -String getTipo();
 
-    Esta interfaz debe de ser implementada anto por la clase como cuidadores en su lista.
-    El programa debe de permitir al usuario:
-        -Agregar un nuevo animal o cuidador.
-        -Mostrar todos los elementos gestionables (animales y cuidadores).
-        -Guardar y cargar toda la información (animales y cuidadores) mediante serializacion.
+Esta interfaz debe de ser implementada anto por la clase como cuidadores en su lista.
+El programa debe de permitir al usuario:
+    -Agregar un nuevo animal o cuidador.
+    -Mostrar todos los elementos gestionables (animales y cuidadores).
+    -Guardar y cargar toda la información (animales y cuidadores) mediante serializacion.
