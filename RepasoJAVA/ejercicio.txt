@@ -134,4 +134,32 @@ Trabajando con archivos JAVA
 Se ha de escribir un programa en java que lea el archivo TXT y luego escriba el mismo contenido en otro archi llamado salida.bin
 Hay que asegurarse de leer el archivo en bloques bytes y escribirlo en el archivo de salida en modo binario.
 
+---------- Ejercicio 13 (21/10) ---------
 
+Se desea desarrollar un sistema de gestion de un zoologico donde cada animal tiene caracteristicas especificas dependiendo de su especie. El zoo puede tener diferentes tipos de animales, mamiferos y aves. Queremos guardar toda la información en un archivo para poder recuperarla posteriormente.
+El programa debe:
+    -Clase Animal (abstracta) que incluye atributos comunes como nombre y edad.
+    -Clase mamifero y Ave que extienden de Animal. Cada una debe tener atributos especificos.
+        -Los mamiferos tienen un tributo adicional: tienePelo() --> boolean
+        -Las Aves tienen un atributo adicional: puedeVolar() --> boolean
+    Clase Zoologico.
+        -La clase zoologico contiene una lista de animales y permite agregar animales, listar todos los animales y guardar/recuperar la lista de animales usando sealizaciones y deserializacion.
+
+    El programa debe:
+        -Permitir al usuario agregar mamiferos o aves al zoologico a traves de la consola.
+        -Serializar la lista de animales en un archivo binario (.bin o .ser)
+        -Deserializar la lista y mostrar los animales en el zoologico cuando se vuelva a abrir el programa.
+
+--------- Ampliación ---------
+
+El zoologico ahora no solo maneja animales sino tambien cuidadores. Queremos ampliar la funcionalidad del Zoologico para que pueda egestionar tanto animales como cuidadores.
+
+Implementar una interfaz llamada Gestionable que define los metodos:
+    -String getNombre();
+    -String getTipo();
+
+    Esta interfaz debe de ser implementada anto por la clase como cuidadores en su lista.
+    El programa debe de permitir al usuario:
+        -Agregar un nuevo animal o cuidador.
+        -Mostrar todos los elementos gestionables (animales y cuidadores).
+        -Guardar y cargar toda la información (animales y cuidadores) mediante serializacion.
