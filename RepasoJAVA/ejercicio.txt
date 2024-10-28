@@ -128,7 +128,7 @@ Finalmente crearemos un fichero en otro metodo dentro de FileManager que cree un
 Crearemos un archivo llamado entrada.txt con el siguiente contenido:
 
 Este es un archivo de ejemplo:
-Aprendiendo a usar FileInputStream y FileOutputStream
+Apreggindiendo a usar FileInputStream y FileOutputStream
 Trabajando con archivos JAVA
 
 Se ha de escribir un programa en java que lea el archivo TXT y luego escriba el mismo contenido en otro archi llamado salida.bin
